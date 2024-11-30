@@ -4,7 +4,8 @@
  #on: One or array of events
  on:
    push:
-     branches:-dev
+     branches:
+          - dev
  jobs:
      run-shell-command:
      #job name
