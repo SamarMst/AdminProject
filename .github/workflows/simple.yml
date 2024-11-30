@@ -18,5 +18,5 @@
        - name: multiline script
          run: |
              node -v
-             npm-v
+             npm -v
 
