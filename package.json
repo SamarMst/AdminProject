@@ -1,9 +1,12 @@
- {
+{
  "dependencies": {
- "express": "*"
+   "express": "*",
+   "webpack": "*",
+   "webpack-cli": "*"
  },
  "scripts": {
- "start": "node SourceCode/index.js",
- "dev": "nodemon SourceCode/index.js",
- "test": "jest --watchAll"   }
- }
+   "start": "node SourceCode/index.js",
+   "dev": "nodemon SourceCode/index.js",
+   "build": "webpack"
+ } 
+}
