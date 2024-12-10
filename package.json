@@ -3,8 +3,7 @@
  "express": "*"
  },
  "scripts": {
- "start": "node  SourceCode/index.js",
+ "start": "node SourceCode/index.js",
  "dev": "nodemon SourceCode/index.js",
- "test": "jest --watchAll"
- }
+ "test": "jest --watchAll"   }
  }
