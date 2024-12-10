@@ -1,22 +1,24 @@
- name: Shell Commands
- #workflow name
+name: Shell Commands
+# Workflow name
 
- #on: One or array of events
- on:
-   push:
-     branches:
-          - dev
- jobs:
-     run-shell-command:
-     #job name
-       runs-on: ubuntu-latest
-       #Runner OS
-       steps:
-       #Array of steps (object): name, run bash command-name: echo a string
-       - name: echo a string 
-         run: echo "Starting"
-       - name: multiline script
-         run: |
-             node -v
-             npm -v
+on:
+  push:
+    branches:
+      - dev
+# Trigger the workflow on a push to the dev branch
 
+jobs:
+  run-shell-command:
+    # Job name
+    runs-on: ubuntu-latest
+    # Runner OS
+
+    steps:
+      # Array of steps
+      - name: Echo a string
+        run: echo "Starting"
+
+      - name: Run multiline script
+        run: |
+          node -v
+          npm -v
